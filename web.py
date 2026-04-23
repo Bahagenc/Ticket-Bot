@@ -594,23 +594,18 @@ HTML = """
     <div class="setup-steps">
         <div class="step-card">
             <div class="step-num">1</div>
-            <h3>Bot Oluştur</h3>
-            <p>Discord Developer Portal'da uygulama oluştur, bot ekle ve token al.</p>
+            <h3>Botu Ekle</h3>
+            <p>Yukarıdaki "Bot Ekle" tuşuna bas. </p>
         </div>
         <div class="step-card">
             <div class="step-num">2</div>
-            <h3>Intents Aç</h3>
-            <p><code>Server Members</code> ve <code>Message Content</code> intentlerini Developer Portal'dan etkinleştir.</p>
+            <h3>Panel Kur</h3>
+            <p>Sunucunda <code>/ticket-setup</code> komutunu çalıştır, kanal ve rol seç. Hazır! 🎉.</p>
         </div>
         <div class="step-card">
             <div class="step-num">3</div>
-            <h3>Deploy Et</h3>
-            <p>Railway.app'e GitHub reposu üzerinden deploy et. <code>DISCORD_TOKEN</code> env variable ekle.</p>
-        </div>
-        <div class="step-card">
-            <div class="step-num">4</div>
-            <h3>Panel Kur</h3>
-            <p>Sunucunda <code>/ticket-setup</code> komutunu çalıştır, kanal ve rol seç. Hazır! 🎉</p>
+            <h3>BOT HAZIR!</h3>
+            <p>Botu Dilediğin Gibi Kullan👾</p>
         </div>
     </div>
 
