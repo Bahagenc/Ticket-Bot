@@ -15,6 +15,8 @@ import json
 import os
 import datetime
 import asyncio
+import threading
+from web import app as flask_app
 
 # ─── CONFIG ───────────────────────────────────────────────
 TOKEN = os.getenv("DISCORD_TOKEN", "YOUR_BOT_TOKEN_HERE")
@@ -527,9 +529,17 @@ async def on_app_command_error(interaction: discord.Interaction, error: app_comm
 
 
 # ─── BAŞLAT ───────────────────────────────────────────────
+def run_flask():
+    port = int(os.getenv("PORT", 5000))
+    flask_app.run(host="0.0.0.0", port=port, use_reloader=False)
+
 if __name__ == "__main__":
     if TOKEN == "YOUR_BOT_TOKEN_HERE":
         print("⚠️  DISCORD_TOKEN ortam değişkenini ayarla!")
         print("   Örnek: DISCORD_TOKEN=token python3 bot.py")
     else:
+        # Flask web sunucusunu ayrı thread'de başlat
+        flask_thread = threading.Thread(target=run_flask, daemon=True)
+        flask_thread.start()
+        print(f"🌐 Web dashboard başlatıldı → http://localhost:{os.getenv('PORT', 5000)}")
         bot.run(TOKEN)
