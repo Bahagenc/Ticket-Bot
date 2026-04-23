@@ -450,8 +450,8 @@ HTML = """
     <h1>Profesyonel<br>Ticket Yönetimi</h1>
     <p>Sunucunuz için tam özellikli, kolay kurulumlu Discord ticket botu. Destek taleplerinizi düzenli yönetin.</p>
     <div class="hero-buttons">
-        <a href="https://discord.com/developers/applications" target="_blank" class="btn btn-primary">
-            <i class="fab fa-discord"></i> Developer Portal
+        <a href="https://discord.com/oauth2/authorize?client_id=1496490739645943933&permissions=8&integration_type=0&scope=bot" target="_blank" class="btn btn-primary">
+            <i class="fab fa-discord"></i> Botu Ekle
         </a>
         <a href="#komutlar" class="btn btn-secondary">
             <i class="fas fa-book"></i> Komutlar
@@ -618,7 +618,7 @@ HTML = """
 
 <!-- FOOTER -->
 <footer>
-    <p>🎫 Ticket Bot &nbsp;•&nbsp; <span>discord.py 2.x</span> ile yapıldı &nbsp;•&nbsp; 7/24 çalışır</p>
+    <p>🎫 Ticket Bot &nbsp;•&nbsp; <span>discord.py</span> ile yapıldı &nbsp;•&nbsp; 7/24 çalışır</p>
 </footer>
 
 <script>
