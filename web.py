@@ -590,7 +590,7 @@ HTML = """
 
     <!-- SETUP -->
     <div class="section-title">🚀 Kurulum</div>
-    <div class="section-sub">4 adımda botunu kur</div>
+    <div class="section-sub">3 adımda botunu kur</div>
     <div class="setup-steps">
         <div class="step-card">
             <div class="step-num">1</div>
